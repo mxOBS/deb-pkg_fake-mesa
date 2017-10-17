@@ -1,0 +1,21 @@
+Source: fake-mesa
+Priority: optional
+Maintainer: Josua Mayer <josua.mayer97@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Section: libs
+Homepage: https://github.com/mxOBS/deb-pkg_fake-mesa.git
+Vcs-Git: https://github.com/mxOBS/deb-pkg_fake-mesa.git
+Vcs-Browser: https://github.com/mxOBS/deb-pkg_fake-mesa.git
+
+Package: fake-mesa-common-dev
+Section: libdevel
+Architecture: any
+Provides:
+ mesa-common-dev,
+Depends:
+ ${misc:Depends},
+ libx11-dev,
+ libdrm-dev,
+Description: fake mesa-common-dev package
+ Provides a fake mesa-common-dev that doesn't conflict with vivante.
